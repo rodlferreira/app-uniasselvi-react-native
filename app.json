@@ -1,0 +1,12 @@
+{
+  "name": "appUniasselvi",
+  "displayName": "appUniasselvi",
+  "expo": {
+    "name": "appUniasselvi",
+    "slug": "appUniasselvi",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
