@@ -1,7 +1,15 @@
 import React from 'react';
 import * as S from "./styles";
+import { Linking } from 'react-native';
 
 export function Body(){
+
+
+    async function handleSendLinkRegister(){
+        const linkRegister = await Linking.openURL('https://portal.uniasselvi.com.br/graduacao/pi/teresina/museologia?place=teresina-pi-zona-sul&modality=ead');
+        return linkRegister;
+    }
+
     return(
         <S.Container>
             <S.Wrapper>
@@ -23,9 +31,11 @@ export function Body(){
                                     <S.TextNumberValue>
                                         de R$ 240,00
                                     </S.TextNumberValue>
-                                    <S.TextTagValue>
-                                        35% OFF
-                                    </S.TextTagValue>
+                                    <S.ContainerTagValue>
+                                        <S.TextTagValue>
+                                            35% OFF
+                                        </S.TextTagValue>
+                                    </S.ContainerTagValue>
                                 </S.NumberValues>
                             </S.PromotionWrapper>
                             <S.TagValue>
@@ -43,7 +53,7 @@ export function Body(){
 
 
                         <S.ButtonRegister>
-                            <S.ButtonClick>
+                            <S.ButtonClick onPress={() => handleSendLinkRegister()}>
                                 <S.ButtonText>
                                     Inscreva-se  
                                 </S.ButtonText>   

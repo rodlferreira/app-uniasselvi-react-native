@@ -1,8 +1,6 @@
 import { scale } from 'react-native-size-matters';
 import styled from 'styled-components/native'
 
-
-
 export const Container = styled.View`
     height: ${scale(348)}px;
     padding-left: ${scale(32)}px;
@@ -47,7 +45,7 @@ export const SelectionProcess = styled.View`
 export const TextSelectionProcess = styled.Text`
     font-size: ${scale(24)}px;
     font-weight: bold;
-    color:${({theme})=> theme.colors.gray_primary};
+    color:${({theme})=> theme.colors.gray_announcement};
     text-align: center;
     margin-left: ${scale(32)};
   
@@ -70,7 +68,7 @@ export const PromotionWrapper  = styled.View`
 export const TextNumberValue = styled.Text`
     font-size: ${scale(14)}px;
     font-weight: 400;
-    color:${({theme})=> theme.colors.white};
+    color:${({theme})=> theme.colors.white_announcement};
     align-items: center;
     align-self: flex-end;
     margin-right: ${scale(8)}px;
@@ -84,7 +82,7 @@ export const TagValue = styled.View`
 export const TextTagValue = styled.Text`
     font-size: ${scale(12)}px;
     font-weight: 900;
-    color: ${({theme})=> theme.colors.white};
+    color: ${({theme})=> theme.colors.white_announcement};
     align-items: center;
 `;
 
@@ -97,7 +95,7 @@ export const MaxValue = styled.View`
 export const TextPor  = styled.Text`
     font-size: ${scale(18)}px;
     font-weight: 500;
-    color:${({theme})=> theme.colors.white};
+    color:${({theme})=> theme.colors.white_announcement};
     align-items: center;
     margin-right: ${scale(4)}px;
 `;
@@ -105,7 +103,7 @@ export const TextPor  = styled.Text`
 export const TextMaxValue = styled.Text`
     font-size: ${scale(24)}px;
     font-weight: 500;
-    color: ${({theme})=> theme.colors.white};
+    color: ${({theme})=> theme.colors.white_announcement};
     align-items: center;
 `;
 
@@ -117,7 +115,7 @@ export const ButtonRegister = styled.View`
 `;
 
 export const ButtonClick = styled.TouchableOpacity`
-    background-color: ${({theme})=> theme.colors.white};
+    background-color: ${({theme})=> theme.colors.white_announcement};
     border-radius: ${scale(10)}px;
     margin-top: ${scale(8)}px;
 `;
@@ -125,7 +123,16 @@ export const ButtonClick = styled.TouchableOpacity`
 export const ButtonText = styled.Text`
     font-size: ${scale(18)}px;
     font-weight: 500;
-    color: ${({theme})=> theme.colors.gray_primary};
+    color: ${({theme})=> theme.colors.gray_announcement};
     align-items: center;
     padding: ${scale(10)}px 
+`;
+
+export const ContainerTagValue = styled.View`
+    width: ${scale(68)}px;
+    height: ${scale(22)}px;
+    justify-content: center;
+    align-items: center;
+    border-radius: ${scale(10)}px;
+    background-color: ${({ theme }) => theme.colors.gray_announcement};
 `;

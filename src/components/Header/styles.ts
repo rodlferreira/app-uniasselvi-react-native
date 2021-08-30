@@ -25,7 +25,7 @@ export const CourseWrapper = styled.View`
 export const CourseText = styled.Text`
     font-size: ${scale(24)}px;
     font-weight: 700;
-    ${({theme})=> theme.colors.gray_primary};
+    ${({theme})=> theme.colors.gray_announcement};
 `
 
 export const ProfessionWrapper = styled.View`
@@ -51,8 +51,8 @@ justify-content: space-between;
 
 export const TextMode = styled.Text`
     font-size: ${scale(8)}px;
-    font-weight: 900;
-    ${({theme})=> theme.colors.gray_primary};
+    font-weight: bold;
+    ${({theme})=> theme.colors.gray_announcement};
 `
 
 export const Location = styled.View `
@@ -60,6 +60,6 @@ export const Location = styled.View `
 `
 export const LocationText = styled.Text`
     font-size: ${scale(16)}px;
-    font-weight: 500;
-    ${({theme})=> theme.colors.gray_primary};
+    font-weight: bold;
+    ${({theme})=> theme.colors.gray_announcement};
 `

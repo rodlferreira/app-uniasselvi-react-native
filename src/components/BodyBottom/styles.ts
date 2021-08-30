@@ -3,7 +3,7 @@ import styled from 'styled-components/native'
 
 
 export const Container = styled.View`
-    height: 500px;
+    height: ${scale(700)}px;
     margin-top: ${scale(28)}px;
     background-color: ${({ theme }) => theme.colors.gray_body};
     border-top-left-radius: ${scale(40)}px;
@@ -54,3 +54,21 @@ export const Text = styled.Text`
     align-items: center;
 `;
 
+export const ContainerMyHistory = styled.View``;
+
+export const TextMyHistory = styled.Text`
+    font-size: ${scale(24)}px;
+    font-weight: bold;
+    color: ${({theme})=> theme.colors.gray_primary};
+`;
+
+export const FreeCoursesWrapper = styled.View`
+    margin-top: ${scale(24)}px;
+`;
+
+
+export const TextFreeCourses = styled.Text`
+    font-size: ${scale(24)}px;
+    font-weight: bold;
+    color: ${({theme})=> theme.colors.gray_primary};
+`;

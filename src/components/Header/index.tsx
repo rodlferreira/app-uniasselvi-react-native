@@ -2,9 +2,16 @@ import React, { useState } from "react";
 import { Switch } from "react-native";
 import * as S from "./styles";
 
-export function Header() {
+interface IProps {
+  toggledTheme: () => void;
+}
+
+export function Header({ toggledTheme }: IProps) {
     const [isEnabled, setIsEnabled] = useState(false);
-    const toggleSwitch = () => setIsEnabled(previousState => !previousState);
+    const toggleSwitch = () => {
+      setIsEnabled(previousState => !previousState);
+      toggledTheme();
+    };
   return (
     <S.Container>
       <S.Wrapper>
