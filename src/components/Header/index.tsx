@@ -33,7 +33,7 @@ export function Header({ toggledTheme }: IProps) {
                 <Switch
                 trackColor={{ false: "#fff", true: "#4C4C4C" }}
                 thumbColor={isEnabled ? "#fff" : "#D6B617"}
-                ios_backgroundColor="#3e3e3e"
+                ios_backgroundColor="#fff"
                 onValueChange={toggleSwitch}
                 value={isEnabled}
                 
