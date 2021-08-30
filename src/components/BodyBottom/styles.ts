@@ -4,7 +4,7 @@ import styled from 'styled-components/native'
 
 export const Container = styled.View`
     height: ${scale(700)}px;
-    margin-top: ${scale(28)}px;
+    margin-top: ${scale(24)}px;
     background-color: ${({ theme }) => theme.colors.gray_body};
     border-top-left-radius: ${scale(40)}px;
     border-top-right-radius: ${scale(40)}px;
